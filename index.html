@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#394635">
+  <meta name="description" content="Um convite especial para comemorar a vida, comer bem e dançar!">
+  <title>Uma festa daquelas! 🎉</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <span class="eyebrow">VOCÊ ESTÁ CONVIDADO(A) ✷</span>
+    <p class="hero-emoji" aria-hidden="true">🐕 🍻 🌿</p>
+    <h1>
+      Mais um ano de vida.
+      <span>Mais uma festa!</span>
+    </h1>
+
+    <p class="hero-description">
+      Boa comida, música boa e gente querida.
+      O resto a gente resolve na pista.
+    </p>
+
+    <div class="event-details">
+      <p class="event-detail">📅 <strong>[DATA DA FESTA]</strong></p>
+      <p class="event-detail">⏰ <strong>[HORÁRIO]</strong></p>
+      <p class="event-detail">📍 <strong>[ENDEREÇO A DEFINIR]</strong></p>
+    </div>
+
+    <a class="button button-light" href="#confirmacao">
+      Bora comemorar? ↓
+    </a>
+  </header>
+
+  <main>
+    <section class="party section">
+      <span class="eyebrow">O QUE TE ESPERA</span>
+      <h2>O combo perfeito<br>existe e eu posso provar.</h2>
+
+      <div class="party-grid">
+        <article class="party-card">
+          <span class="card-emoji" aria-hidden="true">🎸</span>
+          <h3>Banda + DJ</h3>
+          <p>Pra cantar junto e perder a vergonha na pista.</p>
+        </article>
+
+        <article class="party-card">
+          <span class="card-emoji" aria-hidden="true">🍲</span>
+          <h3>Feijuca pra geral</h3>
+          <p>Tradicional e vegana. Todo mundo come feliz.</p>
+        </article>
+
+        <article class="party-card">
+          <img class="card-logo" src="assets/images/jyba_logo.webp"
+            alt="Logo do Chopp Gelado">
+          <h3>Chopp gelado</h3>
+          <p>Com opção sem álcool pra quem preferir.</p>
+        </article>
+
+        <article class="party-card">
+          <span class="card-emoji" aria-hidden="true">🐶</span>
+          <h3>Energia de milhões</h3>
+          <p>Amizades, boas histórias e muito amor envolvido.</p>
+        </article>
+      </div>
+
+      <p class="small-note">
+        📍 Local: [ENDEREÇO A DEFINIR]<br>
+        Mais informações serão compartilhadas por aqui.
+      </p>
+    </section>
+
+    <section class="rsvp section" id="confirmacao">
+      <span class="eyebrow">AGORA É COM VOCÊ</span>
+      <h2>Vai colar ou vai deixar saudade?</h2>
+      <p>Me conta qual vai ser! Prometo que não tem prova de academia. 😅</p>
+
+      <div class="choice-buttons">
+        <button class="button button-primary" type="button"
+          data-open="form-presenca">
+          🎉 Vou! Confirmar presença
+        </button>
+
+        <button class="button button-outline" type="button"
+          data-open="form-mensagem">
+          💌 Não vou, mas quero deixar uma mensagem
+        </button>
+      </div>
+
+      <p class="privacy-note">
+        🔒 As respostas serão acessíveis somente aos organizadores
+        autorizados. Não publicaremos mensagens nem dados dos convidados.
+      </p>
+
+      <div class="form-panel" id="form-presenca" hidden>
+        <h3>Oba! Preenche aqui 💚</h3>
+
+        <form class="guest-form" data-form-type="presenca">
+          <label for="nome">Seu nome *</label>
+          <input id="nome" name="nome" type="text"
+            maxlength="100" autocomplete="name" required>
+
+          <label for="cidade">De qual cidade você vem?</label>
+          <input id="cidade" name="cidade" type="text"
+            maxlength="100" autocomplete="address-level2">
+
+          <fieldset>
+            <legend>Como é sua alimentação? *</legend>
+            <label class="option">
+              <input type="radio" name="alimentacao"
+                value="Como de tudo" required>
+              Como de tudo
+            </label>
+            <label class="option">
+              <input type="radio" name="alimentacao" value="Vegetariana">
+              Vegetariana
+            </label>
+            <label class="option">
+              <input type="radio" name="alimentacao" value="Vegana">
+              Vegana
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Você bebe bebidas alcoólicas? *</legend>
+            <label class="option">
+              <input type="radio" name="bebe" value="Sim" required>
+              Sim
+            </label>
+            <label class="option">
+              <input type="radio" name="bebe" value="Não">
+              Não
+            </label>
+            <label class="option">
+              <input type="radio" name="bebe" value="Prefiro não informar">
+              Prefiro não informar
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>O que toca na sua playlist? *</legend>
+            <p class="field-hint">Pode marcar mais de uma opção.</p>
+            <div class="music-options">
+              <label class="option"><input type="checkbox" name="musicas" value="MPB"> MPB</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Pagode"> Pagode</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Samba"> Samba</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Pop"> Pop</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Rock"> Rock</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Funk"> Funk</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Eletrônica"> Eletrônica</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Sertanejo"> Sertanejo</label>
+              <label class="option"><input type="checkbox" name="musicas" value="Outro"> Outro</label>
+            </div>
+          </fieldset>
+
+          <label for="recado-presenca">
+            Deixa um recado pra aniversariante 💌
+          </label>
+          <textarea id="recado-presenca" name="mensagem"
+            maxlength="1000" rows="4"
+            placeholder="Vale declaração, piada ou promessa de levar sobremesa..."></textarea>
+
+          <label class="consent option">
+            <input type="checkbox" name="consentimento" value="sim" required>
+            Concordo que meus dados sejam usados para organizar esta festa.
+          </label>
+
+          <button class="button button-primary" type="submit">
+            Confirmar minha presença
+          </button>
+          <button class="text-button" type="button" data-close>
+            Voltar
+          </button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="form-panel" id="form-mensagem" hidden>
+        <h3>Ah, que pena! Mas deixa seu carinho 💌</h3>
+
+        <form class="guest-form" data-form-type="mensagem">
+          <label for="nome-mensagem">Seu nome (opcional)</label>
+          <input id="nome-mensagem" name="nome"
+            type="text" maxlength="100" autocomplete="name">
+
+          <label for="recado">Sua mensagem *</label>
+          <textarea id="recado" name="mensagem"
+            maxlength="1000" rows="5"
+            placeholder="Vou ficar devendo essa, mas desejo..." required></textarea>
+
+          <label class="consent option">
+            <input type="checkbox" name="consentimento" value="sim" required>
+            Concordo que meus dados sejam usados para organizar esta festa.
+          </label>
+
+          <button class="button button-primary" type="submit">
+            Enviar meu carinho
+          </button>
+          <button class="text-button" type="button" data-close>
+            Voltar
+          </button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <p class="footer-note">
+        Feito com comida, música, cachorros e um pouquinho de caos. 🌿
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Uma comemoração entre pessoas queridas 💚</p>
+  </footer>
+</body>
+</html>
